@@ -14,7 +14,7 @@ int main() {
         while(!(num % i))   num /= i;
         i++;
     }
-    if (num == 1)  num = --i;
+    if (num == 1)  num = --i; // num为平方数时会被算成1
     printf("%d\n", num);
     return 0;
 }
