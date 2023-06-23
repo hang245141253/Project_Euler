@@ -24,7 +24,7 @@ int main() {
     int sum = 0;
     int n = 1000;
     for (int i = 0; i < n; i++) {
-        if (!is_val(i)) continue; 
+        if (!is_val(i)) continue; // 节约一个缩进
         sum += i;
     }
     cout << sum << endl;

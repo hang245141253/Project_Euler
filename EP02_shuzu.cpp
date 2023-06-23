@@ -8,6 +8,7 @@ int main() {
     int sum = 2;
     for (int i = 3; i < 44 && fib[i - 1] + fib[i - 2] < 4000000; i++) {
         fib[i] = fib[i - 1] + fib[i - 2];
+        // & 1 <==> % 2 （二进制偶数0 & 1 = 0 二进制奇数1 & 1 = 1）
         if (!(fib[i] & 1)) sum += fib[i];
     }
     cout << sum << endl;
