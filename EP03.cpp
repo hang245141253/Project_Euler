@@ -8,13 +8,25 @@ What is the largest prime factor of the number 600851475143?
 #define N 600851475143LL
 
 int main() {
-    // 求m的最大质因数
     long long num = N;
-    int i = 2; //即算法中描述的k
-    while (num > 1) {
-        if (!(num % i)) num /= i;
-        else i++; // k是递增的
+    int i = 2;
+    while (i * i <= num) {
+        while(!(num % i))   num /= i;
+        i++;
     }
-    printf("%d\n", i);
+    if (num == 1)  num = --i;
+    printf("%d\n", num);
     return 0;
 }
+
+// 暴力循环
+// int main() {
+//     long long num = N;
+//     int i = 2, ans = 0;
+//     while (num > 1) {
+//         if (!(num % i)) num /= i, ans++;
+//         else i++, ans++; // k是递增的
+//     }
+//     printf("%d, cut = %d\n", i, ans);
+//     return 0;
+// }
