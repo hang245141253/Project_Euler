@@ -15,7 +15,7 @@ int main() {
         i++;
     }
     if (num == 1)  num = --i; // num为平方数时会被算成1
-    printf("%d\n", num);
+    printf("%lld\n", num);
     return 0;
 }
 
