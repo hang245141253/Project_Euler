@@ -12,9 +12,9 @@ bool F(int x) {
 
 int main(void) {
     int sum = 0;
-    for (int i = 1; i < 2100000000; i++) {
+    for (int i = 2; i <= 354294; i++) {
         F(i) && (sum += i);
     }
-    printf("%d\n", sum); // 443840
+    printf("%d\n", sum); // 443839
     return 0;
 }
