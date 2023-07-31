@@ -14,14 +14,6 @@ void init(int n) {
         num[i] = 1;
     }
 
-    // // output
-    // for (int i = 0; i < MAX_N; i++) {
-    //     printf("fac[%d] = %d\n", i, fac[i]);
-    // }
-    // for (int i = 0; i < MAX_N; i++) {
-    //     printf("num[%d] = %d\n", i, num[i]);
-    // }
-
     return ;
 }
 
